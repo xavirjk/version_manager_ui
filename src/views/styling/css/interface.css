@@ -1,0 +1,62 @@
+body {
+  font-size: 14px;
+  font-family: Georgia, serif;
+}
+.div-aside p {
+  text-align: center;
+}
+.common div span {
+  color: #00008b;
+}
+.loginSpan {
+  color: rgb(37, 48, 100);
+  font-size: 3rem;
+  width: 100%;
+}
+.app form div input {
+  height: 45px;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid hsla(0, 0%, 50%, 0.5);
+}
+.app form span {
+  font-size: 0.9rem;
+}
+.floated_to_right {
+  float: right;
+  margin-right: 0rem;
+}
+
+.app form select {
+  margin-bottom: 20px;
+  height: 50px;
+  width: 91%;
+  border: 0;
+  border-bottom: 1px solid hsla(0, 0%, 50%, 0.5);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: url('../../../images/drpdown.png') 99% / 3% no-repeat;
+}
+.errorField {
+  color: red;
+}
+.app form button {
+  height: 40px;
+  width: 100px;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: green;
+}
+.app form button:hover {
+  position: relative;
+  top: -2px;
+  left: -2px;
+  height: 42px;
+  background-color: rgb(184, 144, 92);
+  font-family: Proxima Nova, Arial, 'sans-serif';
+  font: 1.15rem bold;
+}

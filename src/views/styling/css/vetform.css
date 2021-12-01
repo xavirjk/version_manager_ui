@@ -1,0 +1,13 @@
+html {
+  font-size: 16px;
+  font-family: Georgia, Times, serif;
+}
+select:focus {
+  outline: green;
+}
+ul li {
+  list-style: none;
+
+  /*color: rgb(32, 88, 32)*/
+  /*#065d7a*/
+}
