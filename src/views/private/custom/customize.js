@@ -184,7 +184,7 @@ const ProjectUpdate = () => {
       <Styled.Card>
         <input
           type='file'
-          accept='.zip, .exe'
+          accept='.zip'
           onChange={(e) => utils.monitorAFileInput(e, setPayload, payload)}
         />
       </Styled.Card>
