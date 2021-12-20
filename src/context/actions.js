@@ -12,13 +12,12 @@ let response;
 export async function UploadData(dispatch, payload, path, fls) {
   dispatch({ type: 'REQUEST_API' });
   requestOptions.body = JSON.stringify(payload);
-  console.log(requestOptions);
 
   requestOptions.headers.authorization = localStorage.getItem('_u')
     ? `${JSON.parse(localStorage.getItem('_u')).u}`
     : '';
 
-  await fetch(`http://localhost:3700${path}`, requestOptions)
+  await fetch(`${path}`, requestOptions)
     .then((r) => r.json().then((data) => (r.ok ? data : Promise.reject(data))))
     .then(
       (user) => {
@@ -53,7 +52,7 @@ export async function fetchData(dispatch, path) {
     ? `${JSON.parse(localStorage.getItem('_u')).u}`
     : '';
   const headers = requestOptions.headers;
-  await fetch(`http://localhost:3700${path}`, { headers })
+  await fetch(`${path}`, { headers })
     .then((r) => r.json())
     .then(
       (data) => {

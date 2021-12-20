@@ -81,7 +81,7 @@ const CreateNew = () => {
   const [project, setName] = useState('');
   async function handleSubmit(e) {
     const path = utils.remotes.new;
-    const payload = { project, version: '1.0' };
+    const payload = { project, version: '1.0.0' };
     const res = await UploadData(dispatch, payload, path);
     if (res) {
       utils.clearContextErrors(dispatch);
@@ -133,7 +133,7 @@ const ProjectUpdate = () => {
       body: formData,
     };
     axios
-      .post(`http://localhost:3700${path}`, data.body, {
+      .post(`${path}`, data.body, {
         headers: data.headers,
       })
       .then((res) => {
